@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&family=Tilt+Warp&display=swap');
+
+.container_nav{
+    background-color: #5E37AB;
+    flex-direction: row;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 3px 0.5px #000;
+}
+.container_nav h1{
+    font-family: 'Bungee Shade',Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.container_nav  a{
+    color: #FFF;
+    
+    text-decoration: none;
+
+}
+.container_nav ul{
+    display: flex;
+    font-family: 'Tilt Warp',Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+.container_nav ul a{
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.3s;
+    
+}
+.container_nav ul a:hover{
+    border-bottom: 1px solid #000;
+
+}

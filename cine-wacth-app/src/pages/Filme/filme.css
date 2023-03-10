@@ -1,0 +1,37 @@
+.info{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: calc(100vh - 150px);
+    justify-content: center;
+    width: 100%;
+    
+}
+.container-filme{
+    display: flex;
+    width: 700px;
+    flex-direction: row;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+.details{
+    padding: 10px;
+}
+.details h1{
+    color: #fff;
+}
+.details h3{
+    width: 80px;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: blueviolet;
+}
+.details p{
+    font-size: 26px;
+    color: #fff;
+}
+.poster img{
+    border-radius: 2px;
+    width: 300px;
+}

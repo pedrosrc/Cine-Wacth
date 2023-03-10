@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&family=Squada+One&display=swap');
+
+
+.container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.container h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Squada One','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+}
+.loading{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_movie{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.section_movie div{
+    
+    width: 300px;
+    height: 400px;
+    margin: 10px 15px;
+    text-align: center;
+    border-radius: 10px;
+    flex-direction: column;
+    display: block;
+    padding: 18px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 3px 0.5px #000;
+    
+}
+.section_movie div:hover{
+    background-color: #000;
+    transform: translate(-3px , -5px);
+    transition: .3s;
+}
+.section_movie div strong{
+    text-align: center;
+}
+.section_movie img{
+    width: 290px;
+    height: 350px;
+    border-radius: 7px;
+}
+.section_movie a{
+    
+    text-decoration: none;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding: 6px;
+    transition: all 0.3s;
+}
+.section_movie a:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
