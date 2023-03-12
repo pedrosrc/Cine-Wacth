@@ -1,11 +1,15 @@
 import {  useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
+import {GrAdd , GrPlay} from 'react-icons/gr'
 import './filme.css'
 import api from "../../services/api"
+import { toast } from "react-toastify"
 
 export default function Filme(){
 
     const{id} = useParams()
+    const navigation = useNavigate();
+
     const[filme, setFilme]= useState({})
     const [loading, setLoading] = useState(true);
 
@@ -25,6 +29,8 @@ export default function Filme(){
             })
             .catch(()=>{
                 console.log('Movie Not Found')
+                navigation("/", {replace: true})
+                return;
             })
             
         }
@@ -36,7 +42,25 @@ export default function Filme(){
         }
 
 
-    }, [])
+    }, [navigation, id])
+
+    function saveMovie(){
+        const myList = localStorage.getItem("@cinewacth")
+
+        let moviessave = JSON.parse(myList) || [];
+
+        const hasMovie = moviessave.some((moviessave)=> moviessave.id === filme.id)
+
+        if(hasMovie){
+            toast.warn('O filme já está salvo!')
+        }else{
+            moviessave.push(filme)
+            localStorage.setItem("@cinewacth", JSON.stringify(moviessave))
+            toast.success('Filme salvo com sucesso!')
+        }
+
+    }
+
 
     if (loading){
         return(
@@ -55,9 +79,14 @@ export default function Filme(){
                 </div>
                 <div className="details">
                     <h1>{filme.title}</h1>
-                    <h3>Nota: {filme.vote_average}</h3>
-                    <p>Sinopse:{filme.overview}</p>
+                    <h3>Nota: {filme.vote_average.toFixed(1)}</h3>
+                    <p><strong>Sinopse:</strong>{filme.overview}</p>
+                    <div className="buttons">
+                    <button onClick={saveMovie} > <GrAdd/> Salvar</button>
+                    <button><a href={`https://youtube.com/results?search_query=${filme.title} trailer`} target="_blank" rel="external"> <GrPlay/> Trailer</a></button>
+                    </div>
                 </div>
+                
 
             </div>
             

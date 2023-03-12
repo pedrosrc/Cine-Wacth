@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&family=Squada+One&display=swap');
 
 .container_nav{
     background-color: #5E37AB;
     flex-direction: row;
     display: flex;
+    overflow-x: hidden;
     padding: 10px;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 0 3px 0.5px #000;
+    
 }
 .container_nav h1{
     font-family: 'Bungee Shade',Arial, Helvetica, sans-serif;
@@ -22,19 +25,86 @@
 
 }
 .container_nav ul{
+    align-items: center;
     display: flex;
-    font-family: 'Tilt Warp',Arial, Helvetica, sans-serif;
+    font-family: 'Squada One',Arial, Helvetica, sans-serif;
     list-style: none;
+    
 }
+.nav_item{
+    margin: 0 15px;
+}
+
 .container_nav ul a{
+    
     text-decoration: none;
     margin: 0 5px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 24px;
     transition: all 0.3s;
+
     
 }
 .container_nav ul a:hover{
-    border-bottom: 1px solid #000;
+    color: #000;
 
+}
+#list{
+    background-color: #000;
+    padding: 5px;
+    border-radius: 5px;
+}
+#list a:hover{
+    color: blueviolet;
+}
+.toglle-btn {
+    display: none;
+    
+}
+.mobile-menu{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .container_nav{
+        align-items: center;
+        
+        padding: 1.5em 4rem;
+        
+    }
+    .nav_item{
+        display: none;
+    }
+    .toglle-btn{
+        display: block;
+    }
+    .toglle-btn button{
+        margin: 0 15px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+    
+    .container_nav h1{
+        font-size: 28px;
+        margin-right: 5px;
+    }
+    
+    
+    .mobile-menu ul{
+        display: flex;
+        
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        
+        border-radius: 5px;
+    }
+    .mobile-menu .nav_item{
+        display: block;
+        padding-bottom: 1.3rem;
+    }
+    .open{
+        display: block;
+    }
 }

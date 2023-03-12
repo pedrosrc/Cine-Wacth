@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&family=Squada+One&display=swap');
 .info{
     display: flex;
     margin: auto;
@@ -12,26 +13,77 @@
     width: 700px;
     flex-direction: row;
     background-color: #1a1a1a;
+   
     padding: 20px;
     border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #fff;
 }
 .details{
     padding: 10px;
 }
 .details h1{
+    margin: 15px;
     color: #fff;
+    font-family: 'Squada One',Arial, Helvetica, sans-serif;
+    font-weight: normal;
 }
 .details h3{
+    margin: 15px;
     width: 80px;
     padding: 5px;
-    border-radius: 6px;
-    background-color: blueviolet;
+    border-radius: 4px;
+    background-color: #5E37AB;
 }
 .details p{
-    font-size: 26px;
+    margin: 15px;
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.details .buttons{
+    display: flex;
+}
+.details .buttons button{
+    background-color: #363636;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 5px 15px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 16px;
+
+}
+.details .buttons button:hover{
+    background-color: #5E37AB;
+    transform: translate(-1px, -3px);
     color: #fff;
 }
+
+
 .poster img{
     border-radius: 2px;
     width: 300px;
+}
+@media screen and (max-width:700px){
+    .info{
+        height: 100%;
+    }
+    .container-filme{
+        display: flex;
+
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 }

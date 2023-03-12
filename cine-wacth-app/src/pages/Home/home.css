@@ -47,6 +47,7 @@
     background-color: #1a1a1a;
     box-shadow: 0 0 3px 0.5px #000;
     
+    
 }
 .section_movie div:hover{
     background-color: #000;
@@ -55,6 +56,9 @@
 }
 .section_movie div strong{
     text-align: center;
+    font-family: 'Squada One','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 19px;
 }
 .section_movie img{
     width: 290px;

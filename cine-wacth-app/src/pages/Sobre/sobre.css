@@ -50,3 +50,8 @@
     color: #fff;
     align-items: center;
 }
+@media screen and (max-width: 600px){
+    .sobre{
+        width: 300px;
+    }
+}
