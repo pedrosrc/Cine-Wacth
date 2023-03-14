@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Monofett&family=Squada+One&display=swap');
 
+
 .container_nav{
     background-color: #5E37AB;
     flex-direction: row;
     display: flex;
     overflow-x: hidden;
-    padding: 10px;
+    padding: 0 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -64,12 +65,10 @@
 .mobile-menu{
     display: none;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .container_nav{
         align-items: center;
-        
-        padding: 1.5em 4rem;
-        
+        padding: 1em 1rem;
     }
     .nav_item{
         display: none;
@@ -92,12 +91,11 @@
     
     
     .mobile-menu ul{
+
         display: flex;
-        
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
-        
+        padding: 12px 0;
         border-radius: 5px;
     }
     .mobile-menu .nav_item{
@@ -107,4 +105,11 @@
     .open{
         display: block;
     }
+    .open_bottom{
+        display: block;
+    }
+    .close_bottom{
+        display: none;
+    }
+
 }
