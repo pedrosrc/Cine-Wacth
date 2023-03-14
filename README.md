@@ -1,6 +1,6 @@
 <h1 align="center": center">CineWacth</h1>
-<img src="./img/cinewacth.PNG" width="1000" align="center">
-<h3 align="center">Confira meu Projeto <a href="https://pedrosrc.github.io/portifolio/">Aqui🔗</a></h3>
+<img src="./img/cinewacth.png" width="1000" align="center">
+<h3 align="center">Confira meu Projeto <a href="https://cine-wacth.vercel.app">Aqui🔗</a></h3>
 <h2>💡A ideia de criar foi:</h2>
 <ul>
   <li>Apresentar meus conhecimentos</li>
